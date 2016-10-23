@@ -1,0 +1,15 @@
+-cp /usr/local/lib/haxe/lib/kha/git/Sources
+-cp /usr/local/lib/haxe/lib/kha/git/Backends/Android
+-cp ../Sources
+-D no-compilation
+-D sys_android
+-D sys_g1
+-D sys_g2
+-D sys_g3
+-D sys_g4
+-D sys_a1
+-D kha
+-D kha_version=1609
+-java android/HelloKha
+-java-lib ../../../../../../../../usr/local/lib/haxe/lib/kha/git/Tools/haxe/hxjava/hxjava-std.jar
+-main Main

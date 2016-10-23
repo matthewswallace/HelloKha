@@ -1,0 +1,20 @@
+-cp /usr/local/lib/haxe/lib/kha/git/Sources
+-cp /usr/local/lib/haxe/lib/kha/git/Backends/HTML5
+-cp ../Sources
+-cp /Users/matthew.wallace/Dropbox/dev/haxe/udemy/AWSMobileHubHx/aws/
+-cp /Users/matthew.wallace/Dropbox/dev/haxe/udemy/AWSMobileHubHx
+-D AWSMobileHubHx
+-D sys_g1
+-D sys_g2
+-D sys_g3
+-D sys_g4
+-D sys_a1
+-D sys_a2
+-D webgl
+-D sys_debug-html5
+-D sys_debug_html5
+-D kha
+-D kha_version=1609
+-js debug-html5/kha.js
+-debug
+-main Main
