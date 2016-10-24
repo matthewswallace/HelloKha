@@ -4,8 +4,8 @@
 #ifndef INCLUDED_Project
 #include <Project.h>
 #endif
-#ifndef INCLUDED_aws_mobile_AWSMobileHub
-#include <aws/mobile/AWSMobileHub.h>
+#ifndef INCLUDED_aws_mobile_AWSMobileHubHx
+#include <aws/mobile/AWSMobileHubHx.h>
 #endif
 #ifndef INCLUDED_kha_Assets
 #include <kha/Assets.h>
@@ -62,7 +62,7 @@ void Project_obj::loadedEverything(){
             	HX_STACK_FRAME("Project","loadedEverything",0xd0a2102d,"Project.loadedEverything","Project.hx",17,0xbb0fc1a5)
             	HX_STACK_THIS(this)
 HXLINE(  18)		this->font1 = ::kha::Assets_obj::fonts->OpenSans_Regular;
-HXLINE(  20)		::aws::mobile::AWSMobileHub_obj::helloFromMobileHub();
+HXLINE(  20)		::aws::mobile::AWSMobileHubHx_obj::helloFromMobileHub();
 HXLINE(  22)		::kha::System_obj::notifyOnRender(this->render_dyn(),null());
             	}
 

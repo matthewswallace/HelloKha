@@ -43,16 +43,16 @@
 			"type": "font"
 		},
 		{
-			"name": "OpenSans_Regular",
+			"name": "OpenSans_LightItalic",
 			"files": [
-				"OpenSans-Regular.ttf"
+				"OpenSans-LightItalic.ttf"
 			],
 			"type": "font"
 		},
 		{
-			"name": "OpenSans_LightItalic",
+			"name": "OpenSans_Regular",
 			"files": [
-				"OpenSans-LightItalic.ttf"
+				"OpenSans-Regular.ttf"
 			],
 			"type": "font"
 		},

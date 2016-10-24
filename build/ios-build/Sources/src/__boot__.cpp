@@ -562,8 +562,8 @@
 #ifndef INCLUDED_cpp_vm_Lock
 #include <cpp/vm/Lock.h>
 #endif
-#ifndef INCLUDED_aws_mobile_AWSMobileHub
-#include <aws/mobile/AWSMobileHub.h>
+#ifndef INCLUDED_aws_mobile_AWSMobileHubHx
+#include <aws/mobile/AWSMobileHubHx.h>
 #endif
 #ifndef INCLUDED_Type
 #include <Type.h>
@@ -795,7 +795,7 @@ hx::RegisterResources( hx::GetResources() );
 ::cpp::vm::Thread_obj::__register();
 ::cpp::vm::Mutex_obj::__register();
 ::cpp::vm::Lock_obj::__register();
-::aws::mobile::AWSMobileHub_obj::__register();
+::aws::mobile::AWSMobileHubHx_obj::__register();
 ::Type_obj::__register();
 ::StringTools_obj::__register();
 ::StringBuf_obj::__register();

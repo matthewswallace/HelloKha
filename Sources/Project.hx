@@ -5,7 +5,7 @@ import kha.Color;
 import kha.System;
 import kha.Assets;
 import kha.Font;
-import aws.mobile.AWSMobileHub;
+import aws.mobile.AWSMobileHubHx;
 
 class Project {
 	public var font1:Font;
@@ -17,7 +17,7 @@ class Project {
 	public function loadedEverything() {
 		font1 = Assets.fonts.OpenSans_Regular;
 		#if (sys_ios || sys_android_native)
-		AWSMobileHub.helloFromMobileHub();
+		AWSMobileHubHx.helloFromMobileHub();
 		#end
 		System.notifyOnRender(render);
 	}

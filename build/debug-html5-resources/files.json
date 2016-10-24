@@ -8,16 +8,16 @@
 			"type": "font"
 		},
 		{
-			"name": "OpenSans_BoldItalic",
+			"name": "OpenSans_ExtraBold",
 			"files": [
-				"OpenSans-BoldItalic.ttf"
+				"OpenSans-ExtraBold.ttf"
 			],
 			"type": "font"
 		},
 		{
-			"name": "OpenSans_ExtraBold",
+			"name": "OpenSans_BoldItalic",
 			"files": [
-				"OpenSans-ExtraBold.ttf"
+				"OpenSans-BoldItalic.ttf"
 			],
 			"type": "font"
 		},

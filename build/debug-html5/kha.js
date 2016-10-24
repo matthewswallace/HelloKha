@@ -329,11 +329,9 @@ _$UInt_UInt_$Impl_$.toFloat = function(this1) {
 		return this1 + 0.0;
 	}
 };
-var aws_mobile_AWSMobileHub = function() { };
-$hxClasses["aws.mobile.AWSMobileHub"] = aws_mobile_AWSMobileHub;
-aws_mobile_AWSMobileHub.__name__ = true;
-aws_mobile_AWSMobileHub.helloFromMobileHub = function() {
-};
+var aws_mobile_AWSMobileHubHx = function() { };
+$hxClasses["aws.mobile.AWSMobileHubHx"] = aws_mobile_AWSMobileHubHx;
+aws_mobile_AWSMobileHubHx.__name__ = true;
 var haxe_IMap = function() { };
 $hxClasses["haxe.IMap"] = haxe_IMap;
 haxe_IMap.__name__ = true;
@@ -1821,7 +1819,7 @@ kha_BlobList.prototype = {
 	,__class__: kha_BlobList
 };
 var kha_FontList = function() {
-	this.names = ["OpenSans_Bold","OpenSans_BoldItalic","OpenSans_ExtraBold","OpenSans_ExtraBoldItalic","OpenSans_Italic","OpenSans_Light","OpenSans_LightItalic","OpenSans_Regular","OpenSans_Semibold","OpenSans_SemiboldItalic"];
+	this.names = ["OpenSans_Bold","OpenSans_ExtraBold","OpenSans_BoldItalic","OpenSans_ExtraBoldItalic","OpenSans_Italic","OpenSans_Light","OpenSans_LightItalic","OpenSans_Regular","OpenSans_Semibold","OpenSans_SemiboldItalic"];
 	this.OpenSans_SemiboldItalicDescription = { files : ["OpenSans-SemiboldItalic.ttf"], type : "font", name : "OpenSans_SemiboldItalic"};
 	this.OpenSans_SemiboldItalicName = "OpenSans_SemiboldItalic";
 	this.OpenSans_SemiboldItalic = null;
@@ -1843,12 +1841,12 @@ var kha_FontList = function() {
 	this.OpenSans_ExtraBoldItalicDescription = { files : ["OpenSans-ExtraBoldItalic.ttf"], type : "font", name : "OpenSans_ExtraBoldItalic"};
 	this.OpenSans_ExtraBoldItalicName = "OpenSans_ExtraBoldItalic";
 	this.OpenSans_ExtraBoldItalic = null;
-	this.OpenSans_ExtraBoldDescription = { files : ["OpenSans-ExtraBold.ttf"], type : "font", name : "OpenSans_ExtraBold"};
-	this.OpenSans_ExtraBoldName = "OpenSans_ExtraBold";
-	this.OpenSans_ExtraBold = null;
 	this.OpenSans_BoldItalicDescription = { files : ["OpenSans-BoldItalic.ttf"], type : "font", name : "OpenSans_BoldItalic"};
 	this.OpenSans_BoldItalicName = "OpenSans_BoldItalic";
 	this.OpenSans_BoldItalic = null;
+	this.OpenSans_ExtraBoldDescription = { files : ["OpenSans-ExtraBold.ttf"], type : "font", name : "OpenSans_ExtraBold"};
+	this.OpenSans_ExtraBoldName = "OpenSans_ExtraBold";
+	this.OpenSans_ExtraBold = null;
 	this.OpenSans_BoldDescription = { files : ["OpenSans-Bold.ttf"], type : "font", name : "OpenSans_Bold"};
 	this.OpenSans_BoldName = "OpenSans_Bold";
 	this.OpenSans_Bold = null;
@@ -1868,18 +1866,6 @@ kha_FontList.prototype = {
 		this.OpenSans_Bold.unload();
 		this.OpenSans_Bold = null;
 	}
-	,OpenSans_BoldItalic: null
-	,OpenSans_BoldItalicName: null
-	,OpenSans_BoldItalicDescription: null
-	,OpenSans_BoldItalicLoad: function(done) {
-		kha_Assets.loadFont("OpenSans_BoldItalic",function(font) {
-			done();
-		});
-	}
-	,OpenSans_BoldItalicUnload: function() {
-		this.OpenSans_BoldItalic.unload();
-		this.OpenSans_BoldItalic = null;
-	}
 	,OpenSans_ExtraBold: null
 	,OpenSans_ExtraBoldName: null
 	,OpenSans_ExtraBoldDescription: null
@@ -1891,6 +1877,18 @@ kha_FontList.prototype = {
 	,OpenSans_ExtraBoldUnload: function() {
 		this.OpenSans_ExtraBold.unload();
 		this.OpenSans_ExtraBold = null;
+	}
+	,OpenSans_BoldItalic: null
+	,OpenSans_BoldItalicName: null
+	,OpenSans_BoldItalicDescription: null
+	,OpenSans_BoldItalicLoad: function(done) {
+		kha_Assets.loadFont("OpenSans_BoldItalic",function(font) {
+			done();
+		});
+	}
+	,OpenSans_BoldItalicUnload: function() {
+		this.OpenSans_BoldItalic.unload();
+		this.OpenSans_BoldItalic = null;
 	}
 	,OpenSans_ExtraBoldItalic: null
 	,OpenSans_ExtraBoldItalicName: null

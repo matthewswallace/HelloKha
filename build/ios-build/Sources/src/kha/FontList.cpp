@@ -15,7 +15,7 @@
 #endif
 
 static const ::String _hx_array_data_0[] = {
-	HX_("OpenSans_Bold",07,1b,92,8a),HX_("OpenSans_BoldItalic",57,3d,a7,e5),HX_("OpenSans_ExtraBold",73,7f,83,ba),HX_("OpenSans_ExtraBoldItalic",c3,ba,c9,0d),HX_("OpenSans_Italic",f2,ac,d5,8d),HX_("OpenSans_Light",14,49,4c,73),HX_("OpenSans_Regular",1a,16,65,7e),HX_("OpenSans_LightItalic",24,f3,ce,0d),HX_("OpenSans_Semibold",75,5f,04,ca),HX_("OpenSans_SemiboldItalic",45,88,5d,d8),
+	HX_("OpenSans_Bold",07,1b,92,8a),HX_("OpenSans_BoldItalic",57,3d,a7,e5),HX_("OpenSans_ExtraBold",73,7f,83,ba),HX_("OpenSans_ExtraBoldItalic",c3,ba,c9,0d),HX_("OpenSans_Italic",f2,ac,d5,8d),HX_("OpenSans_Light",14,49,4c,73),HX_("OpenSans_LightItalic",24,f3,ce,0d),HX_("OpenSans_Regular",1a,16,65,7e),HX_("OpenSans_Semibold",75,5f,04,ca),HX_("OpenSans_SemiboldItalic",45,88,5d,d8),
 };
 static const ::String _hx_array_data_1[] = {
 	HX_("OpenSans-SemiboldItalic.ttf",8b,d5,99,26),
@@ -24,10 +24,10 @@ static const ::String _hx_array_data_2[] = {
 	HX_("OpenSans-Semibold.ttf",3b,76,29,0a),
 };
 static const ::String _hx_array_data_3[] = {
-	HX_("OpenSans-LightItalic.ttf",8e,88,89,5d),
+	HX_("OpenSans-Regular.ttf",84,fd,6f,25),
 };
 static const ::String _hx_array_data_4[] = {
-	HX_("OpenSans-Regular.ttf",84,fd,6f,25),
+	HX_("OpenSans-LightItalic.ttf",8e,88,89,5d),
 };
 static const ::String _hx_array_data_5[] = {
 	HX_("OpenSans-Light.ttf",fe,34,dd,5d),
@@ -65,18 +65,18 @@ HXLINE( 122)		this->OpenSans_SemiboldDescription =  ::Dynamic(hx::Anon_obj::Crea
             			->setFixed(2,HX_("type",ba,f2,08,4d),HX_("font",cf,5d,c0,43)));
 HXLINE( 113)		this->OpenSans_SemiboldName = HX_("OpenSans_Semibold",75,5f,04,ca);
 HXLINE(  94)		this->OpenSans_Semibold = null();
-HXLINE( 122)		this->OpenSans_LightItalicDescription =  ::Dynamic(hx::Anon_obj::Create(3)
-            			->setFixed(0,HX_("files",77,de,98,00),::Array_obj< ::String >::fromData( _hx_array_data_3,1))
-            			->setFixed(1,HX_("name",4b,72,ff,48),HX_("OpenSans_LightItalic",24,f3,ce,0d))
-            			->setFixed(2,HX_("type",ba,f2,08,4d),HX_("font",cf,5d,c0,43)));
-HXLINE( 113)		this->OpenSans_LightItalicName = HX_("OpenSans_LightItalic",24,f3,ce,0d);
-HXLINE(  94)		this->OpenSans_LightItalic = null();
 HXLINE( 122)		this->OpenSans_RegularDescription =  ::Dynamic(hx::Anon_obj::Create(3)
-            			->setFixed(0,HX_("files",77,de,98,00),::Array_obj< ::String >::fromData( _hx_array_data_4,1))
+            			->setFixed(0,HX_("files",77,de,98,00),::Array_obj< ::String >::fromData( _hx_array_data_3,1))
             			->setFixed(1,HX_("name",4b,72,ff,48),HX_("OpenSans_Regular",1a,16,65,7e))
             			->setFixed(2,HX_("type",ba,f2,08,4d),HX_("font",cf,5d,c0,43)));
 HXLINE( 113)		this->OpenSans_RegularName = HX_("OpenSans_Regular",1a,16,65,7e);
 HXLINE(  94)		this->OpenSans_Regular = null();
+HXLINE( 122)		this->OpenSans_LightItalicDescription =  ::Dynamic(hx::Anon_obj::Create(3)
+            			->setFixed(0,HX_("files",77,de,98,00),::Array_obj< ::String >::fromData( _hx_array_data_4,1))
+            			->setFixed(1,HX_("name",4b,72,ff,48),HX_("OpenSans_LightItalic",24,f3,ce,0d))
+            			->setFixed(2,HX_("type",ba,f2,08,4d),HX_("font",cf,5d,c0,43)));
+HXLINE( 113)		this->OpenSans_LightItalicName = HX_("OpenSans_LightItalic",24,f3,ce,0d);
+HXLINE(  94)		this->OpenSans_LightItalic = null();
 HXLINE( 122)		this->OpenSans_LightDescription =  ::Dynamic(hx::Anon_obj::Create(3)
             			->setFixed(0,HX_("files",77,de,98,00),::Array_obj< ::String >::fromData( _hx_array_data_5,1))
             			->setFixed(1,HX_("name",4b,72,ff,48),HX_("OpenSans_Light",14,49,4c,73))
@@ -299,34 +299,6 @@ HXLINE( 189)		this->OpenSans_Light = null();
 
 HX_DEFINE_DYNAMIC_FUNC0(FontList_obj,OpenSans_LightUnload,(void))
 
-void FontList_obj::OpenSans_RegularLoad( ::Dynamic done){
-            		HX_BEGIN_LOCAL_FUNC_S1(hx::LocalFunc,_hx_Closure_0, ::Dynamic,done) HXARGC(1)
-            		void _hx_run(::Dynamic font){
-            			HX_STACK_FRAME("kha.FontList","OpenSans_RegularLoad",0xe5b66bb7,"kha.FontList.OpenSans_RegularLoad","kha/internal/AssetsBuilder.hx",149,0x6901246d)
-            			HX_STACK_ARG(font,"font")
-HXLINE( 149)			done();
-            		}
-            		HX_END_LOCAL_FUNC1((void))
-
-            	HX_STACK_FRAME("kha.FontList","OpenSans_RegularLoad",0xe5b66bb7,"kha.FontList.OpenSans_RegularLoad","kha/internal/AssetsBuilder.hx",148,0x6901246d)
-            	HX_STACK_THIS(this)
-            	HX_STACK_ARG(done,"done")
-HXLINE( 148)		::kha::Assets_obj::loadFont(HX_("OpenSans_Regular",1a,16,65,7e), ::Dynamic(new _hx_Closure_0(done)));
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(FontList_obj,OpenSans_RegularLoad,(void))
-
-void FontList_obj::OpenSans_RegularUnload(){
-            	HX_STACK_FRAME("kha.FontList","OpenSans_RegularUnload",0x9e0fb8d0,"kha.FontList.OpenSans_RegularUnload","kha/internal/AssetsBuilder.hx",187,0x6901246d)
-            	HX_STACK_THIS(this)
-HXLINE( 188)		::kha::Resource_obj::unload(this->OpenSans_Regular);
-HXLINE( 189)		this->OpenSans_Regular = null();
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC0(FontList_obj,OpenSans_RegularUnload,(void))
-
 void FontList_obj::OpenSans_LightItalicLoad( ::Dynamic done){
             		HX_BEGIN_LOCAL_FUNC_S1(hx::LocalFunc,_hx_Closure_0, ::Dynamic,done) HXARGC(1)
             		void _hx_run(::Dynamic font){
@@ -354,6 +326,34 @@ HXLINE( 189)		this->OpenSans_LightItalic = null();
 
 
 HX_DEFINE_DYNAMIC_FUNC0(FontList_obj,OpenSans_LightItalicUnload,(void))
+
+void FontList_obj::OpenSans_RegularLoad( ::Dynamic done){
+            		HX_BEGIN_LOCAL_FUNC_S1(hx::LocalFunc,_hx_Closure_0, ::Dynamic,done) HXARGC(1)
+            		void _hx_run(::Dynamic font){
+            			HX_STACK_FRAME("kha.FontList","OpenSans_RegularLoad",0xe5b66bb7,"kha.FontList.OpenSans_RegularLoad","kha/internal/AssetsBuilder.hx",149,0x6901246d)
+            			HX_STACK_ARG(font,"font")
+HXLINE( 149)			done();
+            		}
+            		HX_END_LOCAL_FUNC1((void))
+
+            	HX_STACK_FRAME("kha.FontList","OpenSans_RegularLoad",0xe5b66bb7,"kha.FontList.OpenSans_RegularLoad","kha/internal/AssetsBuilder.hx",148,0x6901246d)
+            	HX_STACK_THIS(this)
+            	HX_STACK_ARG(done,"done")
+HXLINE( 148)		::kha::Assets_obj::loadFont(HX_("OpenSans_Regular",1a,16,65,7e), ::Dynamic(new _hx_Closure_0(done)));
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC1(FontList_obj,OpenSans_RegularLoad,(void))
+
+void FontList_obj::OpenSans_RegularUnload(){
+            	HX_STACK_FRAME("kha.FontList","OpenSans_RegularUnload",0x9e0fb8d0,"kha.FontList.OpenSans_RegularUnload","kha/internal/AssetsBuilder.hx",187,0x6901246d)
+            	HX_STACK_THIS(this)
+HXLINE( 188)		::kha::Resource_obj::unload(this->OpenSans_Regular);
+HXLINE( 189)		this->OpenSans_Regular = null();
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC0(FontList_obj,OpenSans_RegularUnload,(void))
 
 void FontList_obj::OpenSans_SemiboldLoad( ::Dynamic done){
             		HX_BEGIN_LOCAL_FUNC_S1(hx::LocalFunc,_hx_Closure_0, ::Dynamic,done) HXARGC(1)
@@ -437,12 +437,12 @@ void FontList_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(OpenSans_Light,"OpenSans_Light");
 	HX_MARK_MEMBER_NAME(OpenSans_LightName,"OpenSans_LightName");
 	HX_MARK_MEMBER_NAME(OpenSans_LightDescription,"OpenSans_LightDescription");
-	HX_MARK_MEMBER_NAME(OpenSans_Regular,"OpenSans_Regular");
-	HX_MARK_MEMBER_NAME(OpenSans_RegularName,"OpenSans_RegularName");
-	HX_MARK_MEMBER_NAME(OpenSans_RegularDescription,"OpenSans_RegularDescription");
 	HX_MARK_MEMBER_NAME(OpenSans_LightItalic,"OpenSans_LightItalic");
 	HX_MARK_MEMBER_NAME(OpenSans_LightItalicName,"OpenSans_LightItalicName");
 	HX_MARK_MEMBER_NAME(OpenSans_LightItalicDescription,"OpenSans_LightItalicDescription");
+	HX_MARK_MEMBER_NAME(OpenSans_Regular,"OpenSans_Regular");
+	HX_MARK_MEMBER_NAME(OpenSans_RegularName,"OpenSans_RegularName");
+	HX_MARK_MEMBER_NAME(OpenSans_RegularDescription,"OpenSans_RegularDescription");
 	HX_MARK_MEMBER_NAME(OpenSans_Semibold,"OpenSans_Semibold");
 	HX_MARK_MEMBER_NAME(OpenSans_SemiboldName,"OpenSans_SemiboldName");
 	HX_MARK_MEMBER_NAME(OpenSans_SemiboldDescription,"OpenSans_SemiboldDescription");
@@ -473,12 +473,12 @@ void FontList_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(OpenSans_Light,"OpenSans_Light");
 	HX_VISIT_MEMBER_NAME(OpenSans_LightName,"OpenSans_LightName");
 	HX_VISIT_MEMBER_NAME(OpenSans_LightDescription,"OpenSans_LightDescription");
-	HX_VISIT_MEMBER_NAME(OpenSans_Regular,"OpenSans_Regular");
-	HX_VISIT_MEMBER_NAME(OpenSans_RegularName,"OpenSans_RegularName");
-	HX_VISIT_MEMBER_NAME(OpenSans_RegularDescription,"OpenSans_RegularDescription");
 	HX_VISIT_MEMBER_NAME(OpenSans_LightItalic,"OpenSans_LightItalic");
 	HX_VISIT_MEMBER_NAME(OpenSans_LightItalicName,"OpenSans_LightItalicName");
 	HX_VISIT_MEMBER_NAME(OpenSans_LightItalicDescription,"OpenSans_LightItalicDescription");
+	HX_VISIT_MEMBER_NAME(OpenSans_Regular,"OpenSans_Regular");
+	HX_VISIT_MEMBER_NAME(OpenSans_RegularName,"OpenSans_RegularName");
+	HX_VISIT_MEMBER_NAME(OpenSans_RegularDescription,"OpenSans_RegularDescription");
 	HX_VISIT_MEMBER_NAME(OpenSans_Semibold,"OpenSans_Semibold");
 	HX_VISIT_MEMBER_NAME(OpenSans_SemiboldName,"OpenSans_SemiboldName");
 	HX_VISIT_MEMBER_NAME(OpenSans_SemiboldDescription,"OpenSans_SemiboldDescription");
@@ -524,9 +524,9 @@ hx::Val FontList_obj::__Field(const ::String &inName,hx::PropertyAccess inCallPr
 		break;
 	case 20:
 		if (HX_FIELD_EQ(inName,"OpenSans_LightUnload") ) { return hx::Val( OpenSans_LightUnload_dyn()); }
+		if (HX_FIELD_EQ(inName,"OpenSans_LightItalic") ) { return hx::Val( OpenSans_LightItalic); }
 		if (HX_FIELD_EQ(inName,"OpenSans_RegularName") ) { return hx::Val( OpenSans_RegularName); }
 		if (HX_FIELD_EQ(inName,"OpenSans_RegularLoad") ) { return hx::Val( OpenSans_RegularLoad_dyn()); }
-		if (HX_FIELD_EQ(inName,"OpenSans_LightItalic") ) { return hx::Val( OpenSans_LightItalic); }
 		break;
 	case 21:
 		if (HX_FIELD_EQ(inName,"OpenSans_ItalicUnload") ) { return hx::Val( OpenSans_ItalicUnload_dyn()); }
@@ -620,8 +620,8 @@ hx::Val FontList_obj::__SetField(const ::String &inName,const hx::Val &inValue,h
 		if (HX_FIELD_EQ(inName,"OpenSans_ItalicName") ) { OpenSans_ItalicName=inValue.Cast< ::String >(); return inValue; }
 		break;
 	case 20:
-		if (HX_FIELD_EQ(inName,"OpenSans_RegularName") ) { OpenSans_RegularName=inValue.Cast< ::String >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"OpenSans_LightItalic") ) { OpenSans_LightItalic=inValue.Cast< ::Dynamic >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"OpenSans_RegularName") ) { OpenSans_RegularName=inValue.Cast< ::String >(); return inValue; }
 		break;
 	case 21:
 		if (HX_FIELD_EQ(inName,"OpenSans_SemiboldName") ) { OpenSans_SemiboldName=inValue.Cast< ::String >(); return inValue; }
@@ -690,12 +690,12 @@ void FontList_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_HCSTRING("OpenSans_Light","\x14","\x49","\x4c","\x73"));
 	outFields->push(HX_HCSTRING("OpenSans_LightName","\x7f","\x01","\x81","\x01"));
 	outFields->push(HX_HCSTRING("OpenSans_LightDescription","\x48","\x88","\xba","\xf4"));
-	outFields->push(HX_HCSTRING("OpenSans_Regular","\x1a","\x16","\x65","\x7e"));
-	outFields->push(HX_HCSTRING("OpenSans_RegularName","\x85","\xc9","\xeb","\x11"));
-	outFields->push(HX_HCSTRING("OpenSans_RegularDescription","\x02","\x6d","\xe7","\xe5"));
 	outFields->push(HX_HCSTRING("OpenSans_LightItalic","\x24","\xf3","\xce","\x0d"));
 	outFields->push(HX_HCSTRING("OpenSans_LightItalicName","\x8f","\xf3","\x09","\x5a"));
 	outFields->push(HX_HCSTRING("OpenSans_LightItalicDescription","\x38","\xf8","\x3a","\x80"));
+	outFields->push(HX_HCSTRING("OpenSans_Regular","\x1a","\x16","\x65","\x7e"));
+	outFields->push(HX_HCSTRING("OpenSans_RegularName","\x85","\xc9","\xeb","\x11"));
+	outFields->push(HX_HCSTRING("OpenSans_RegularDescription","\x02","\x6d","\xe7","\xe5"));
 	outFields->push(HX_HCSTRING("OpenSans_Semibold","\x75","\x5f","\x04","\xca"));
 	outFields->push(HX_HCSTRING("OpenSans_SemiboldName","\x60","\x5c","\xda","\xbe"));
 	outFields->push(HX_HCSTRING("OpenSans_SemiboldDescription","\x87","\xbb","\xf6","\x85"));
@@ -726,12 +726,12 @@ static hx::StorageInfo FontList_obj_sMemberStorageInfo[] = {
 	{hx::fsObject /*::kha::Font*/ ,(int)offsetof(FontList_obj,OpenSans_Light),HX_HCSTRING("OpenSans_Light","\x14","\x49","\x4c","\x73")},
 	{hx::fsString,(int)offsetof(FontList_obj,OpenSans_LightName),HX_HCSTRING("OpenSans_LightName","\x7f","\x01","\x81","\x01")},
 	{hx::fsObject /*Dynamic*/ ,(int)offsetof(FontList_obj,OpenSans_LightDescription),HX_HCSTRING("OpenSans_LightDescription","\x48","\x88","\xba","\xf4")},
-	{hx::fsObject /*::kha::Font*/ ,(int)offsetof(FontList_obj,OpenSans_Regular),HX_HCSTRING("OpenSans_Regular","\x1a","\x16","\x65","\x7e")},
-	{hx::fsString,(int)offsetof(FontList_obj,OpenSans_RegularName),HX_HCSTRING("OpenSans_RegularName","\x85","\xc9","\xeb","\x11")},
-	{hx::fsObject /*Dynamic*/ ,(int)offsetof(FontList_obj,OpenSans_RegularDescription),HX_HCSTRING("OpenSans_RegularDescription","\x02","\x6d","\xe7","\xe5")},
 	{hx::fsObject /*::kha::Font*/ ,(int)offsetof(FontList_obj,OpenSans_LightItalic),HX_HCSTRING("OpenSans_LightItalic","\x24","\xf3","\xce","\x0d")},
 	{hx::fsString,(int)offsetof(FontList_obj,OpenSans_LightItalicName),HX_HCSTRING("OpenSans_LightItalicName","\x8f","\xf3","\x09","\x5a")},
 	{hx::fsObject /*Dynamic*/ ,(int)offsetof(FontList_obj,OpenSans_LightItalicDescription),HX_HCSTRING("OpenSans_LightItalicDescription","\x38","\xf8","\x3a","\x80")},
+	{hx::fsObject /*::kha::Font*/ ,(int)offsetof(FontList_obj,OpenSans_Regular),HX_HCSTRING("OpenSans_Regular","\x1a","\x16","\x65","\x7e")},
+	{hx::fsString,(int)offsetof(FontList_obj,OpenSans_RegularName),HX_HCSTRING("OpenSans_RegularName","\x85","\xc9","\xeb","\x11")},
+	{hx::fsObject /*Dynamic*/ ,(int)offsetof(FontList_obj,OpenSans_RegularDescription),HX_HCSTRING("OpenSans_RegularDescription","\x02","\x6d","\xe7","\xe5")},
 	{hx::fsObject /*::kha::Font*/ ,(int)offsetof(FontList_obj,OpenSans_Semibold),HX_HCSTRING("OpenSans_Semibold","\x75","\x5f","\x04","\xca")},
 	{hx::fsString,(int)offsetof(FontList_obj,OpenSans_SemiboldName),HX_HCSTRING("OpenSans_SemiboldName","\x60","\x5c","\xda","\xbe")},
 	{hx::fsObject /*Dynamic*/ ,(int)offsetof(FontList_obj,OpenSans_SemiboldDescription),HX_HCSTRING("OpenSans_SemiboldDescription","\x87","\xbb","\xf6","\x85")},
@@ -775,16 +775,16 @@ static ::String FontList_obj_sMemberFields[] = {
 	HX_HCSTRING("OpenSans_LightDescription","\x48","\x88","\xba","\xf4"),
 	HX_HCSTRING("OpenSans_LightLoad","\x5a","\x29","\x39","\x00"),
 	HX_HCSTRING("OpenSans_LightUnload","\x33","\x65","\xf7","\x6c"),
-	HX_HCSTRING("OpenSans_Regular","\x1a","\x16","\x65","\x7e"),
-	HX_HCSTRING("OpenSans_RegularName","\x85","\xc9","\xeb","\x11"),
-	HX_HCSTRING("OpenSans_RegularDescription","\x02","\x6d","\xe7","\xe5"),
-	HX_HCSTRING("OpenSans_RegularLoad","\x60","\xf1","\xa3","\x10"),
-	HX_HCSTRING("OpenSans_RegularUnload","\xb9","\xba","\xa8","\x83"),
 	HX_HCSTRING("OpenSans_LightItalic","\x24","\xf3","\xce","\x0d"),
 	HX_HCSTRING("OpenSans_LightItalicName","\x8f","\xf3","\x09","\x5a"),
 	HX_HCSTRING("OpenSans_LightItalicDescription","\x38","\xf8","\x3a","\x80"),
 	HX_HCSTRING("OpenSans_LightItalicLoad","\x6a","\x1b","\xc2","\x58"),
 	HX_HCSTRING("OpenSans_LightItalicUnload","\x43","\xfb","\x2c","\xaf"),
+	HX_HCSTRING("OpenSans_Regular","\x1a","\x16","\x65","\x7e"),
+	HX_HCSTRING("OpenSans_RegularName","\x85","\xc9","\xeb","\x11"),
+	HX_HCSTRING("OpenSans_RegularDescription","\x02","\x6d","\xe7","\xe5"),
+	HX_HCSTRING("OpenSans_RegularLoad","\x60","\xf1","\xa3","\x10"),
+	HX_HCSTRING("OpenSans_RegularUnload","\xb9","\xba","\xa8","\x83"),
 	HX_HCSTRING("OpenSans_Semibold","\x75","\x5f","\x04","\xca"),
 	HX_HCSTRING("OpenSans_SemiboldName","\x60","\x5c","\xda","\xbe"),
 	HX_HCSTRING("OpenSans_SemiboldDescription","\x87","\xbb","\xf6","\x85"),

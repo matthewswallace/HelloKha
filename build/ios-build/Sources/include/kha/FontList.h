@@ -94,15 +94,6 @@ class HXCPP_CLASS_ATTRIBUTES FontList_obj : public hx::Object
 		void OpenSans_LightUnload();
 		::Dynamic OpenSans_LightUnload_dyn();
 
-		::Dynamic OpenSans_Regular;
-		::String OpenSans_RegularName;
-		 ::Dynamic OpenSans_RegularDescription;
-		void OpenSans_RegularLoad( ::Dynamic done);
-		::Dynamic OpenSans_RegularLoad_dyn();
-
-		void OpenSans_RegularUnload();
-		::Dynamic OpenSans_RegularUnload_dyn();
-
 		::Dynamic OpenSans_LightItalic;
 		::String OpenSans_LightItalicName;
 		 ::Dynamic OpenSans_LightItalicDescription;
@@ -111,6 +102,15 @@ class HXCPP_CLASS_ATTRIBUTES FontList_obj : public hx::Object
 
 		void OpenSans_LightItalicUnload();
 		::Dynamic OpenSans_LightItalicUnload_dyn();
+
+		::Dynamic OpenSans_Regular;
+		::String OpenSans_RegularName;
+		 ::Dynamic OpenSans_RegularDescription;
+		void OpenSans_RegularLoad( ::Dynamic done);
+		::Dynamic OpenSans_RegularLoad_dyn();
+
+		void OpenSans_RegularUnload();
+		::Dynamic OpenSans_RegularUnload_dyn();
 
 		::Dynamic OpenSans_Semibold;
 		::String OpenSans_SemiboldName;

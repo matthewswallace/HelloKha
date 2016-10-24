@@ -27,8 +27,8 @@ Dynamic AWSMobileHub_obj::__Create(hx::DynamicArray inArgs)
 }
 
 void AWSMobileHub_obj::helloFromMobileHub(){
-            	HX_STACK_FRAME("aws.mobile.AWSMobileHub","helloFromMobileHub",0x9b4d5014,"aws.mobile.AWSMobileHub.helloFromMobileHub","aws/mobile/AWSMobileHub.hx",14,0x2b3436cd)
-            	AWSMobileHub::helloFromMobileHub;
+            	HX_STACK_FRAME("aws.mobile.AWSMobileHub","helloFromMobileHub",0x9b4d5014,"aws.mobile.AWSMobileHub.helloFromMobileHub","aws/mobile/AWSMobileHub.hx",17,0x2b3436cd)
+            	helloFromMobileHub;
 
             	}
 
