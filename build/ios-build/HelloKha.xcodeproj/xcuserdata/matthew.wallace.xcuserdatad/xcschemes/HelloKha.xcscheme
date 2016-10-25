@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E20CF656-A3EC-41FE-AD9A-39E2058133A6"
+               BlueprintIdentifier = "146630AA-9E09-43B3-BCA9-C1778D3037C5"
                BuildableName = "HelloKha.app"
                BlueprintName = "HelloKha"
                ReferencedContainer = "container:HelloKha.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E20CF656-A3EC-41FE-AD9A-39E2058133A6"
+            BlueprintIdentifier = "146630AA-9E09-43B3-BCA9-C1778D3037C5"
             BuildableName = "HelloKha.app"
             BlueprintName = "HelloKha"
             ReferencedContainer = "container:HelloKha.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E20CF656-A3EC-41FE-AD9A-39E2058133A6"
+            BlueprintIdentifier = "146630AA-9E09-43B3-BCA9-C1778D3037C5"
             BuildableName = "HelloKha.app"
             BlueprintName = "HelloKha"
             ReferencedContainer = "container:HelloKha.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E20CF656-A3EC-41FE-AD9A-39E2058133A6"
+            BlueprintIdentifier = "146630AA-9E09-43B3-BCA9-C1778D3037C5"
             BuildableName = "HelloKha.app"
             BlueprintName = "HelloKha"
             ReferencedContainer = "container:HelloKha.xcodeproj">

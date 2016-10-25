@@ -19,8 +19,8 @@
 		<class path="/usr/local/lib/haxe/lib/kha/git/Sources" />
 		<class path="/usr/local/lib/haxe/lib/kha/git/Backends/Kore" />
 		<class path="../Sources" />
-		<class path="/Users/matthew.wallace/Dropbox/dev/haxe/udemy/AWSMobileHubHx/aws/" />
-		<class path="/Users/matthew.wallace/Dropbox/dev/haxe/udemy/AWSMobileHubHx" />
+		<class path="/Users/matthew.wallace/Dropbox/dev/haxe/share_kha-master/Sources" />
+		<class path="/Users/matthew.wallace/Dropbox/dev/haxe/share_kha-master" />
 	</classpaths>
 	<!-- Build options -->
 	<build>
@@ -29,7 +29,7 @@
 		<option noInlineOnDebug="False" />
 		<option mainClass="Main" />
 		<option enabledebug="False" />
-		<option additional="-D AWSMobileHubHx&#xA;-D no-compilation&#xA;-D sys_ios&#xA;-D sys_kore&#xA;-D sys_g1&#xA;-D sys_g2&#xA;-D sys_g3&#xA;-D sys_g4&#xA;-D sys_a1&#xA;-D sys_a2&#xA;-D kha&#xA;-D kha_version=1609&#xA;-D kha_output=&quot;/Users/matthew.wallace/Dropbox/dev/haxe/udemy/HelloKha/build/ios-build/Sources&quot;&#xA;" />
+		<option additional="-D share_kha_master&#xA;-D no-compilation&#xA;-D sys_ios&#xA;-D sys_kore&#xA;-D sys_g1&#xA;-D sys_g2&#xA;-D sys_g3&#xA;-D sys_g4&#xA;-D sys_a1&#xA;-D sys_a2&#xA;-D kha&#xA;-D kha_version=1609&#xA;-D kha_output=&quot;/Users/matthew.wallace/Dropbox/dev/haxe/udemy/HelloKha/build/ios-build/Sources&quot;&#xA;" />
 	</build>
 	<!-- haxelib libraries -->
 	<haxelib>

@@ -194,6 +194,7 @@ Project.prototype = {
 	font1: null
 	,loadedEverything: function() {
 		this.font1 = kha_Assets.fonts.OpenSans_Regular;
+		share_Share.share("hello","this is a test","http://mattwallace.me",false);
 		kha_System.notifyOnRender($bind(this,this.render));
 	}
 	,render: function(framebuffer) {
@@ -329,9 +330,6 @@ _$UInt_UInt_$Impl_$.toFloat = function(this1) {
 		return this1 + 0.0;
 	}
 };
-var aws_mobile_AWSMobileHubHx = function() { };
-$hxClasses["aws.mobile.AWSMobileHubHx"] = aws_mobile_AWSMobileHubHx;
-aws_mobile_AWSMobileHubHx.__name__ = true;
 var haxe_IMap = function() { };
 $hxClasses["haxe.IMap"] = haxe_IMap;
 haxe_IMap.__name__ = true;
@@ -1819,7 +1817,7 @@ kha_BlobList.prototype = {
 	,__class__: kha_BlobList
 };
 var kha_FontList = function() {
-	this.names = ["OpenSans_Bold","OpenSans_ExtraBold","OpenSans_BoldItalic","OpenSans_ExtraBoldItalic","OpenSans_Italic","OpenSans_Light","OpenSans_LightItalic","OpenSans_Regular","OpenSans_Semibold","OpenSans_SemiboldItalic"];
+	this.names = ["OpenSans_Bold","OpenSans_BoldItalic","OpenSans_ExtraBold","OpenSans_ExtraBoldItalic","OpenSans_Italic","OpenSans_Light","OpenSans_LightItalic","OpenSans_Regular","OpenSans_Semibold","OpenSans_SemiboldItalic"];
 	this.OpenSans_SemiboldItalicDescription = { files : ["OpenSans-SemiboldItalic.ttf"], type : "font", name : "OpenSans_SemiboldItalic"};
 	this.OpenSans_SemiboldItalicName = "OpenSans_SemiboldItalic";
 	this.OpenSans_SemiboldItalic = null;
@@ -1841,12 +1839,12 @@ var kha_FontList = function() {
 	this.OpenSans_ExtraBoldItalicDescription = { files : ["OpenSans-ExtraBoldItalic.ttf"], type : "font", name : "OpenSans_ExtraBoldItalic"};
 	this.OpenSans_ExtraBoldItalicName = "OpenSans_ExtraBoldItalic";
 	this.OpenSans_ExtraBoldItalic = null;
-	this.OpenSans_BoldItalicDescription = { files : ["OpenSans-BoldItalic.ttf"], type : "font", name : "OpenSans_BoldItalic"};
-	this.OpenSans_BoldItalicName = "OpenSans_BoldItalic";
-	this.OpenSans_BoldItalic = null;
 	this.OpenSans_ExtraBoldDescription = { files : ["OpenSans-ExtraBold.ttf"], type : "font", name : "OpenSans_ExtraBold"};
 	this.OpenSans_ExtraBoldName = "OpenSans_ExtraBold";
 	this.OpenSans_ExtraBold = null;
+	this.OpenSans_BoldItalicDescription = { files : ["OpenSans-BoldItalic.ttf"], type : "font", name : "OpenSans_BoldItalic"};
+	this.OpenSans_BoldItalicName = "OpenSans_BoldItalic";
+	this.OpenSans_BoldItalic = null;
 	this.OpenSans_BoldDescription = { files : ["OpenSans-Bold.ttf"], type : "font", name : "OpenSans_Bold"};
 	this.OpenSans_BoldName = "OpenSans_Bold";
 	this.OpenSans_Bold = null;
@@ -1866,18 +1864,6 @@ kha_FontList.prototype = {
 		this.OpenSans_Bold.unload();
 		this.OpenSans_Bold = null;
 	}
-	,OpenSans_ExtraBold: null
-	,OpenSans_ExtraBoldName: null
-	,OpenSans_ExtraBoldDescription: null
-	,OpenSans_ExtraBoldLoad: function(done) {
-		kha_Assets.loadFont("OpenSans_ExtraBold",function(font) {
-			done();
-		});
-	}
-	,OpenSans_ExtraBoldUnload: function() {
-		this.OpenSans_ExtraBold.unload();
-		this.OpenSans_ExtraBold = null;
-	}
 	,OpenSans_BoldItalic: null
 	,OpenSans_BoldItalicName: null
 	,OpenSans_BoldItalicDescription: null
@@ -1889,6 +1875,18 @@ kha_FontList.prototype = {
 	,OpenSans_BoldItalicUnload: function() {
 		this.OpenSans_BoldItalic.unload();
 		this.OpenSans_BoldItalic = null;
+	}
+	,OpenSans_ExtraBold: null
+	,OpenSans_ExtraBoldName: null
+	,OpenSans_ExtraBoldDescription: null
+	,OpenSans_ExtraBoldLoad: function(done) {
+		kha_Assets.loadFont("OpenSans_ExtraBold",function(font) {
+			done();
+		});
+	}
+	,OpenSans_ExtraBoldUnload: function() {
+		this.OpenSans_ExtraBold.unload();
+		this.OpenSans_ExtraBold = null;
 	}
 	,OpenSans_ExtraBoldItalic: null
 	,OpenSans_ExtraBoldItalicName: null
@@ -3532,12 +3530,12 @@ kha_Shaders.init = function() {
 	var data3 = Reflect.field(kha_Shaders,"painter_image_vertData");
 	var bytes3 = haxe_Unserializer.run(data3);
 	kha_Shaders.painter_image_vert = new kha_graphics4_VertexShader(kha_internal_BytesBlob.fromBytes(bytes3),"painter_image_vert");
-	var data4 = Reflect.field(kha_Shaders,"painter_text_fragData");
+	var data4 = Reflect.field(kha_Shaders,"painter_text_vertData");
 	var bytes4 = haxe_Unserializer.run(data4);
-	kha_Shaders.painter_text_frag = new kha_graphics4_FragmentShader(kha_internal_BytesBlob.fromBytes(bytes4),"painter_text_frag");
-	var data5 = Reflect.field(kha_Shaders,"painter_text_vertData");
+	kha_Shaders.painter_text_vert = new kha_graphics4_VertexShader(kha_internal_BytesBlob.fromBytes(bytes4),"painter_text_vert");
+	var data5 = Reflect.field(kha_Shaders,"painter_text_fragData");
 	var bytes5 = haxe_Unserializer.run(data5);
-	kha_Shaders.painter_text_vert = new kha_graphics4_VertexShader(kha_internal_BytesBlob.fromBytes(bytes5),"painter_text_vert");
+	kha_Shaders.painter_text_frag = new kha_graphics4_FragmentShader(kha_internal_BytesBlob.fromBytes(bytes5),"painter_text_frag");
 	var data6 = Reflect.field(kha_Shaders,"painter_video_fragData");
 	var bytes6 = haxe_Unserializer.run(data6);
 	kha_Shaders.painter_video_frag = new kha_graphics4_FragmentShader(kha_internal_BytesBlob.fromBytes(bytes6),"painter_video_frag");
@@ -3612,6 +3610,12 @@ kha_System.notifyOnRender = function(listener,id) {
 	}
 	while(id >= kha_System.renderListeners.length) kha_System.renderListeners.push([]);
 	kha_System.renderListeners[id].push(listener);
+};
+kha_System.removeRenderListener = function(listener,id) {
+	if(id == null) {
+		id = 0;
+	}
+	HxOverrides.remove(kha_System.renderListeners[id],listener);
 };
 kha_System.notifyOnApplicationState = function(foregroundListener,resumeListener,pauseListener,backgroundListener,shutdownListener) {
 	if(foregroundListener != null) {
@@ -3762,7 +3766,7 @@ kha_SystemImpl.init = function(options,callback) {
 	},1000);
 };
 kha_SystemImpl.initEx = function(title,options,windowCallback,callback) {
-	haxe_Log.trace("initEx is not supported on the html5 target, running init() with first window options",{ fileName : "SystemImpl.hx", lineNumber : 80, className : "kha.SystemImpl", methodName : "initEx"});
+	haxe_Log.trace("initEx is not supported on the html5 target, running init() with first window options",{ fileName : "SystemImpl.hx", lineNumber : 81, className : "kha.SystemImpl", methodName : "initEx"});
 	kha_SystemImpl.init({ title : title, width : options[0].width, height : options[0].height},callback);
 	if(windowCallback != null) {
 		windowCallback(0);
@@ -3933,12 +3937,13 @@ kha_SystemImpl.loadFinished = function() {
 				kha_SystemImpl.anisotropicFilter = kha_SystemImpl.gl.getExtension("WEBKIT_EXT_texture_filter_anisotropic");
 			}
 			kha_SystemImpl.drawBuffers = kha_SystemImpl.gl.getExtension("WEBGL_draw_buffers");
+			kha_SystemImpl.elementIndexUint = kha_SystemImpl.gl.getExtension("OES_element_index_uint");
 			gl = true;
 			kha_Shaders.init();
 		}
 	} catch( e ) {
 		if (e instanceof js__$Boot_HaxeError) e = e.val;
-		haxe_Log.trace(e,{ fileName : "SystemImpl.hx", lineNumber : 289, className : "kha.SystemImpl", methodName : "loadFinished"});
+		haxe_Log.trace(e,{ fileName : "SystemImpl.hx", lineNumber : 291, className : "kha.SystemImpl", methodName : "loadFinished"});
 	}
 	kha_SystemImpl.setCanvas(canvas);
 	if(gl) {
@@ -17073,7 +17078,7 @@ kha_graphics4_IndexBuffer.prototype = {
 	}
 	,unlock: function() {
 		kha_SystemImpl.gl.bindBuffer(34963,this.buffer);
-		kha_SystemImpl.gl.bufferData(34963,new Uint16Array(this.data),this.usage == kha_graphics4_Usage.DynamicUsage?35048:35044);
+		kha_SystemImpl.gl.bufferData(34963,kha_SystemImpl.elementIndexUint == null?new Uint16Array(this.data):new Uint32Array(this.data),this.usage == kha_graphics4_Usage.DynamicUsage?35048:35044);
 	}
 	,set: function() {
 		kha_SystemImpl.gl.bindBuffer(34963,this.buffer);
@@ -19472,7 +19477,7 @@ kha_js_graphics4_Graphics.prototype = {
 		if(start == null) {
 			start = 0;
 		}
-		kha_SystemImpl.gl.drawElements(4,count == -1?this.indicesCount:count,5123,start * 2);
+		kha_SystemImpl.gl.drawElements(4,count == -1?this.indicesCount:count,kha_SystemImpl.elementIndexUint == null?5123:5125,start * 2);
 	}
 	,convertStencilAction: function(action) {
 		switch(action[1]) {
@@ -20396,6 +20401,11 @@ kha_simd_Float32x4.prototype = {
 	,_3: null
 	,__class__: kha_simd_Float32x4
 };
+var share_Share = function() { };
+$hxClasses["share.Share"] = share_Share;
+share_Share.__name__ = true;
+share_Share.share = function(subject,body,url,attachScreenshot) {
+};
 function $iterator(o) { if( o instanceof Array ) return function() { return HxOverrides.iter(o); }; return typeof(o.iterator) == 'function' ? $bind(o,o.iterator) : o.iterator; }
 var $_, $fid = 0;
 function $bind(o,m) { if( m == null ) return null; if( m.__id__ == null ) m.__id__ = $fid++; var f; if( o.hx__closures__ == null ) o.hx__closures__ = {}; else f = o.hx__closures__[m.__id__]; if( f == null ) { f = function(){ return f.method.apply(f.scope, arguments); }; f.scope = o; f.method = m; o.hx__closures__[m.__id__] = f; } return f; }
@@ -20455,8 +20465,8 @@ kha_Shaders.painter_colored_fragData = "s190:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWR
 kha_Shaders.painter_colored_vertData = "s334:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgZnJhZ21lbnRDb2xvcjsKYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9Qb3NpdGlvbiA9IChwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKSk7CiAgICBmcmFnbWVudENvbG9yID0gdmVydGV4Q29sb3I7Cn0KCg";
 kha_Shaders.painter_image_fragData = "s444:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBtZWRpdW1wIHNhbXBsZXIyRCB0ZXg7Cgp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CnZhcnlpbmcgdmVjNCBjb2xvcjsKCnZvaWQgbWFpbigpCnsKICAgIHZlYzQgdGV4Y29sb3IgPSAodGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpICogY29sb3IpOwogICAgdmVjMyBfMzIgPSB0ZXhjb2xvci54eXogKiBjb2xvci53OwogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOwogICAgZ2xfRnJhZ0RhdGFbMF0gPSB0ZXhjb2xvcjsKfQoK";
 kha_Shaders.painter_image_vertData = "s418:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgY29sb3I7CmF0dHJpYnV0ZSB2ZWM0IHZlcnRleENvbG9yOwoKdm9pZCBtYWluKCkKewogICAgZ2xfUG9zaXRpb24gPSAocHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCkpOwogICAgdGV4Q29vcmQgPSB0ZXhQb3NpdGlvbjsKICAgIGNvbG9yID0gdmVydGV4Q29sb3I7Cn0KCg";
-kha_Shaders.painter_text_fragData = "s340:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBtZWRpdW1wIHNhbXBsZXIyRCB0ZXg7Cgp2YXJ5aW5nIHZlYzQgZnJhZ21lbnRDb2xvcjsKdmFyeWluZyB2ZWMyIHRleENvb3JkOwoKdm9pZCBtYWluKCkKewogICAgZ2xfRnJhZ0RhdGFbMF0gPSB2ZWM0KGZyYWdtZW50Q29sb3IueHl6LCAodGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpLnggKiBmcmFnbWVudENvbG9yLncpKTsKfQoK";
 kha_Shaders.painter_text_vertData = "s439:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgZnJhZ21lbnRDb2xvcjsKYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9Qb3NpdGlvbiA9IChwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKSk7CiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOwogICAgZnJhZ21lbnRDb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
+kha_Shaders.painter_text_fragData = "s340:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBtZWRpdW1wIHNhbXBsZXIyRCB0ZXg7Cgp2YXJ5aW5nIHZlYzQgZnJhZ21lbnRDb2xvcjsKdmFyeWluZyB2ZWMyIHRleENvb3JkOwoKdm9pZCBtYWluKCkKewogICAgZ2xfRnJhZ0RhdGFbMF0gPSB2ZWM0KGZyYWdtZW50Q29sb3IueHl6LCAodGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpLnggKiBmcmFnbWVudENvbG9yLncpKTsKfQoK";
 kha_Shaders.painter_video_fragData = "s444:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBtZWRpdW1wIHNhbXBsZXIyRCB0ZXg7Cgp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CnZhcnlpbmcgdmVjNCBjb2xvcjsKCnZvaWQgbWFpbigpCnsKICAgIHZlYzQgdGV4Y29sb3IgPSAodGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpICogY29sb3IpOwogICAgdmVjMyBfMzIgPSB0ZXhjb2xvci54eXogKiBjb2xvci53OwogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOwogICAgZ2xfRnJhZ0RhdGFbMF0gPSB0ZXhjb2xvcjsKfQoK";
 kha_Shaders.painter_video_vertData = "s418:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgY29sb3I7CmF0dHJpYnV0ZSB2ZWM0IHZlcnRleENvbG9yOwoKdm9pZCBtYWluKCkKewogICAgZ2xfUG9zaXRpb24gPSAocHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCkpOwogICAgdGV4Q29vcmQgPSB0ZXhQb3NpdGlvbjsKICAgIGNvbG9yID0gdmVydGV4Q29sb3I7Cn0KCg";
 kha_System.renderListeners = [];

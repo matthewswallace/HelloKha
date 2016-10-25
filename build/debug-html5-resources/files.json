@@ -8,16 +8,16 @@
 			"type": "font"
 		},
 		{
-			"name": "OpenSans_ExtraBold",
+			"name": "OpenSans_BoldItalic",
 			"files": [
-				"OpenSans-ExtraBold.ttf"
+				"OpenSans-BoldItalic.ttf"
 			],
 			"type": "font"
 		},
 		{
-			"name": "OpenSans_BoldItalic",
+			"name": "OpenSans_ExtraBold",
 			"files": [
-				"OpenSans-BoldItalic.ttf"
+				"OpenSans-ExtraBold.ttf"
 			],
 			"type": "font"
 		},
@@ -194,35 +194,6 @@
 			]
 		},
 		{
-			"name": "painter_text_frag",
-			"files": [
-				"painter-text.frag.essl"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "fragmentColor",
-					"type": "vec4"
-				},
-				{
-					"name": "texCoord",
-					"type": "vec2"
-				}
-			],
-			"outputs": [
-				{
-					"name": "gl_FragColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [
-				{
-					"name": "tex",
-					"type": "sampler2D"
-				}
-			]
-		},
-		{
 			"name": "painter_text_vert",
 			"files": [
 				"painter-text.vert.essl"
@@ -260,6 +231,35 @@
 				{
 					"name": "projectionMatrix",
 					"type": "mat4"
+				}
+			]
+		},
+		{
+			"name": "painter_text_frag",
+			"files": [
+				"painter-text.frag.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
 				}
 			]
 		},

@@ -18,11 +18,11 @@
       <sourceFolder url="file:///usr/local/lib/haxe/lib/kha/git/Sources" isTestSource="false" />
       <sourceFolder url="file:///usr/local/lib/haxe/lib/kha/git/Backends/Kore" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Sources" isTestSource="false" />
-      <sourceFolder url="file:///Users/matthew.wallace/Dropbox/dev/haxe/udemy/AWSMobileHubHx/aws/" isTestSource="false" />
+      <sourceFolder url="file:///Users/matthew.wallace/Dropbox/dev/haxe/share_kha-master/Sources" isTestSource="false" />
 
     </content>
-    <content url="file:///usr/local/lib/haxe/lib/awsmobilehubhx">
-      <sourceFolder url="file:///Users/matthew.wallace/Dropbox/dev/haxe/udemy/AWSMobileHubHx" isTestSource="false" />
+    <content url="file:///usr/local/lib/haxe/lib/share_kha_master">
+      <sourceFolder url="file:///Users/matthew.wallace/Dropbox/dev/haxe/share_kha-master" isTestSource="false" />
     </content>
     
     <orderEntry type="jdk" jdkName="Haxe 3.2.0" jdkType="Haxe toolkit" />

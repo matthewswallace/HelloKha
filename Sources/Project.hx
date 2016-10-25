@@ -5,8 +5,7 @@ import kha.Color;
 import kha.System;
 import kha.Assets;
 import kha.Font;
-import aws.mobile.AWSMobileHubHx;
-
+import share.Share;
 class Project {
 	public var font1:Font;
 
@@ -16,9 +15,10 @@ class Project {
 
 	public function loadedEverything() {
 		font1 = Assets.fonts.OpenSans_Regular;
-		#if (sys_ios || sys_android_native)
-		AWSMobileHubHx.helloFromMobileHub();
-		#end
+		// #if (sys_ios || sys_android_native)
+		// AWSMobileHubHx.helloFromMobileHub();
+		// #end
+		Share.share("hello", "this is a test","http://mattwallace.me",false);
 		System.notifyOnRender(render);
 	}
 

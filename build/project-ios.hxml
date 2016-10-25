@@ -1,9 +1,9 @@
 -cp /usr/local/lib/haxe/lib/kha/git/Sources
 -cp /usr/local/lib/haxe/lib/kha/git/Backends/Kore
 -cp ../Sources
--cp /Users/matthew.wallace/Dropbox/dev/haxe/udemy/AWSMobileHubHx/aws/
--cp /Users/matthew.wallace/Dropbox/dev/haxe/udemy/AWSMobileHubHx
--D AWSMobileHubHx
+-cp /Users/matthew.wallace/Dropbox/dev/haxe/share_kha-master/Sources
+-cp /Users/matthew.wallace/Dropbox/dev/haxe/share_kha-master
+-D share_kha_master
 -D no-compilation
 -D sys_ios
 -D sys_kore

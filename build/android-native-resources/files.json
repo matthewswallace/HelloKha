@@ -1,0 +1,337 @@
+{
+	"files": [
+		{
+			"name": "OpenSans_Bold",
+			"files": [
+				"OpenSans-Bold.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_BoldItalic",
+			"files": [
+				"OpenSans-BoldItalic.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_ExtraBold",
+			"files": [
+				"OpenSans-ExtraBold.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_ExtraBoldItalic",
+			"files": [
+				"OpenSans-ExtraBoldItalic.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_Italic",
+			"files": [
+				"OpenSans-Italic.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_Light",
+			"files": [
+				"OpenSans-Light.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_LightItalic",
+			"files": [
+				"OpenSans-LightItalic.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_Regular",
+			"files": [
+				"OpenSans-Regular.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_Semibold",
+			"files": [
+				"OpenSans-Semibold.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "OpenSans_SemiboldItalic",
+			"files": [
+				"OpenSans-SemiboldItalic.ttf"
+			],
+			"type": "font"
+		},
+		{
+			"name": "painter_colored_frag",
+			"files": [
+				"painter-colored.frag.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": []
+		},
+		{
+			"name": "painter_colored_vert",
+			"files": [
+				"painter-colored.vert.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "vertexPosition",
+					"type": "vec3"
+				},
+				{
+					"name": "vertexColor",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_Position",
+					"type": "vec4"
+				},
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "projectionMatrix",
+					"type": "mat4"
+				}
+			]
+		},
+		{
+			"name": "painter_image_frag",
+			"files": [
+				"painter-image.frag.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "color",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			]
+		},
+		{
+			"name": "painter_image_vert",
+			"files": [
+				"painter-image.vert.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "vertexPosition",
+					"type": "vec3"
+				},
+				{
+					"name": "texPosition",
+					"type": "vec2"
+				},
+				{
+					"name": "vertexColor",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_Position",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "color",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "projectionMatrix",
+					"type": "mat4"
+				}
+			]
+		},
+		{
+			"name": "painter_text_frag",
+			"files": [
+				"painter-text.frag.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			]
+		},
+		{
+			"name": "painter_video_frag",
+			"files": [
+				"painter-video.frag.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "color",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			]
+		},
+		{
+			"name": "painter_text_vert",
+			"files": [
+				"painter-text.vert.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "vertexPosition",
+					"type": "vec3"
+				},
+				{
+					"name": "texPosition",
+					"type": "vec2"
+				},
+				{
+					"name": "vertexColor",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_Position",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "projectionMatrix",
+					"type": "mat4"
+				}
+			]
+		},
+		{
+			"name": "painter_video_vert",
+			"files": [
+				"painter-video.vert.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "vertexPosition",
+					"type": "vec3"
+				},
+				{
+					"name": "texPosition",
+					"type": "vec2"
+				},
+				{
+					"name": "vertexColor",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "gl_Position",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "color",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "projectionMatrix",
+					"type": "mat4"
+				}
+			]
+		}
+	]
+}
